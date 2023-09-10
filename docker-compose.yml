@@ -37,4 +37,4 @@ volumes:
   mysql_data:
     driver: local
   redis_data:
-      driver: local
+    driver: local
