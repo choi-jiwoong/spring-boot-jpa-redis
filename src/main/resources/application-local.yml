@@ -1,17 +1,13 @@
 spring:
-  jpa:
-    database: mysql
-    hibernate:
-      ddl-auto: create
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/boro?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:43306/boro?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
     username: root
     password: 1234
   cache:
     type: redis
     redis:
       host: localhost
-      port: 6379
+      port: 46379
       time-to-live: 10000
 

@@ -11,5 +11,6 @@ RUN ./gradlew bootJar
 
 FROM amazoncorretto:20
 COPY --from=build build/libs/*.jar app.jar
+ENV	USE_PROFILE local
 
 ENTRYPOINT ["java", "-jar", "app.jar"]

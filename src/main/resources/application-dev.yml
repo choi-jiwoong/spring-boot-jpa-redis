@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${DATABASE_URL}:${DATABASE_PORT}/boro?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+  cache:
+    type: redis
+    redis:
+      host: ${REDIS_URL}
+      port: 6379
+      time-to-live: 10000
